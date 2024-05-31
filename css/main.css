@@ -35,6 +35,9 @@ a {
 
 /* HEADER */
 header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
   background-color: #f6f5f0;
   border-bottom: #c8c8c8;
 }
@@ -124,7 +127,6 @@ header .sub-menu .search.focused .search-icon {
 
 /* MAIN MENU */
 header .main-menu-list {
-  z-index: 1;
   position: relative;
   display: flex;
 }
@@ -184,4 +186,18 @@ header .main-menu-item .contents__texture h4 {
 header .main-menu-item .contents__texture p {
   color: var(--color-green);
   margin: 4px 0 14px;
+}
+
+/* BADGES */
+.side-badges {
+  position: fixed;
+  top: 132px;
+  right: 12px;
+}
+.side-badges .badge {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
