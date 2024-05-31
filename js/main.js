@@ -45,3 +45,9 @@ fadeEls.forEach((fadeEl, index) => {
     opacity: 1,
   });
 });
+
+new Swiper(".swiper-notice", {
+  direction: "vertical",
+  autoplay: true,
+  loop: true,
+});
