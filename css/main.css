@@ -8,6 +8,8 @@
   --color-brown: #592b18;
   --color-gold: #d9aa8a;
   --color-light-beige: #f6f5ef;
+
+  --youtube-width: 1920px;
 }
 
 * {
@@ -541,4 +543,62 @@ header .main-menu-item .contents__texture p {
 .rewards-section .btn-group .btn.gift {
   flex-grow: 1;
   margin-top: 10px;
+}
+
+/* YOUTUBE VIDEO */
+/* youtube 섹션의 일부 높이에서 영상의 정 가운데 부분만 화면에 출력 */
+.youtube-section {
+  position: relative;
+  height: 700px;
+  background-color: var(--color-black);
+  overflow: hidden;
+}
+.youtube__area {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--youtube-width);
+  margin-top: calc(var(--youtube-width) * 9 / 16 / -2);
+  margin-left: calc(var(--youtube-width) / -2);
+  background-color: orange;
+}
+.youtube__area::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+}
+.youtube__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url("../images/video_cover_pattern.png");
+}
+#youtube-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.youtube-section .container {
+  height: 700px;
+}
+.youtube-section .floating {
+  position: absolute;
+}
+.youtube-section .floating-1 {
+  top: 50px;
+  left: 0;
+}
+.youtube-section .floating-2 {
+  top: 350px;
+  left: 150px;
+}
+.youtube-section .floating-3 {
+  bottom: -200px;
+  right: 0;
 }

@@ -86,3 +86,20 @@ function handlePromotionToggleBtnClick() {
 }
 
 promotionToggleBtn.addEventListener("click", handlePromotionToggleBtnClick);
+
+function getRandomNumber(min, max) {
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2));
+}
+
+function floatingObject(selector, delay, size) {
+  gsap.to(selector, getRandomNumber(1.5, 2.5), {
+    y: size,
+    repeat: -1, // 무한 반복
+    yoyo: true,
+    ease: Power1.easeInOut,
+    delay: getRandomNumber(0, delay),
+  });
+}
+floatingObject(".floating-1", 1, 15);
+floatingObject(".floating-2", 0.5, 15);
+floatingObject(".floating-3", 1.5, 20);
