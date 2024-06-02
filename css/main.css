@@ -622,3 +622,26 @@ header .main-menu-item .contents__texture p {
 .season-product-section .text-group .description {
   margin-bottom: 15px;
 }
+
+/* RESERVE COFFEE */
+.reserve-coffee-section {
+  background-image: url("../images/reserve_bg.jpg");
+}
+.reserve-coffee-section .container {
+  height: 400px;
+}
+.reserve-coffee-section .reserve-logo {
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+.reserve-coffee-section .text-group {
+  position: absolute;
+  top: 124px;
+  left: 208px;
+}
+.reserve-coffee-section .product {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
