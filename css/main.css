@@ -84,6 +84,18 @@ a {
   background-color: #fff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 /* HEADER */
 header {
   z-index: 100;
@@ -486,4 +498,47 @@ header .main-menu-item .contents__texture p {
 .notice-section .promotion .swiper-next .material-icons {
   padding-right: 10px;
   font-size: 24px;
+}
+
+/* REWARDS */
+.rewards-section {
+  position: relative;
+}
+.rewards-section .bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #272727;
+}
+.rewards-section .bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #d5c798;
+}
+.rewards-section .container {
+  height: 241px;
+  background-image: url("../images/rewards.jpg");
+}
+.rewards-section .btn-group {
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+  display: flex;
+  width: 250px;
+  flex-wrap: wrap;
+}
+.rewards-section .btn-group .btn.sign-up {
+  margin-right: 10px;
+}
+.rewards-section .btn-group .btn.sign-in {
+  width: 110px;
+}
+.rewards-section .btn-group .btn.gift {
+  flex-grow: 1;
+  margin-top: 10px;
 }
