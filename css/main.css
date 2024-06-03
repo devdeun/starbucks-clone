@@ -670,3 +670,51 @@ header .main-menu-item .contents__texture p {
 .pick-your-favorite-section .text-group .description {
   margin-bottom: 40px;
 }
+
+/* RESERVE STORE */
+.reserve-store-section {
+  background-image: url("../images/reserve_store_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.reserve-store-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+}
+.reserve-store-section .medal {
+  width: 334px;
+  height: 334px;
+  perspective: 600px;
+}
+.reserve-store-section .medal .front,
+.reserve-store-section .medal .back {
+  position: absolute;
+  width: 334px;
+  height: 334px;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+.reserve-store-section .medal .front {
+  transform: rotateY(0deg);
+}
+.reserve-store-section .medal:hover .front {
+  transform: rotateY(180deg);
+}
+.reserve-store-section .medal .back {
+  transform: rotateY(-180deg);
+}
+.reserve-store-section .medal:hover .back {
+  transform: rotateY(0deg);
+}
+.reserve-store-section .medal .back .btn {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
