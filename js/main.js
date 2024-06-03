@@ -21,6 +21,7 @@ searchInputEl.addEventListener("focus", handleFocusInput);
 searchInputEl.addEventListener("blur", handleBlurInput);
 
 const badgeEl = document.querySelector(".side-badges");
+const toTopEl = document.querySelector("#to-top");
 
 function handleWindowScroll() {
   if (window.scrollY > 500) {
@@ -28,15 +29,28 @@ function handleWindowScroll() {
       opacity: 0,
       display: "none",
     });
+    gsap.to(toTopEl, 0.2, {
+      x: 0,
+    });
   } else {
     gsap.to(badgeEl, 0.6, {
       opacity: 1,
       display: "block",
     });
+    gsap.to(toTopEl, 0.2, {
+      x: 100,
+    });
   }
 }
 
+function handleToTopClick() {
+  gsap.to(window, 0.7, {
+    scrollTo: 0,
+  });
+}
+
 window.addEventListener("scroll", _.throttle(handleWindowScroll, 300));
+toTopEl.addEventListener("click", handleToTopClick);
 
 const fadeEls = document.querySelectorAll(".visual-section .fade-in");
 fadeEls.forEach((fadeEl, index) => {

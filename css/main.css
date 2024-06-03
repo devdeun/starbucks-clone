@@ -899,3 +899,21 @@ footer .copyright {
 footer .logo {
   margin: 30px auto 0;
 }
+
+/* TO TOP */
+#to-top {
+  z-index: 100;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  color: #fff;
+  background-color: var(--color-black);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
