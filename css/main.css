@@ -787,3 +787,42 @@ header .main-menu-item .contents__texture p {
 .find-store-section .text-group .description {
   margin-bottom: 20px;
 }
+
+/* AWARDS */
+.awards-section {
+  background-color: #272727;
+}
+.awards-section .container {
+  padding: 40px 0;
+}
+.awards-section .swiper-prev,
+.awards-section .swiper-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  margin: auto;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  outline: none;
+  color: #fff;
+  opacity: 0.3;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.awards-section .swiper-prev {
+  left: -100px;
+  padding-left: 10px;
+}
+.awards-section .swiper-next {
+  right: -100px;
+}
+.awards-section .swiper-prev:hover,
+.awards-section .swiper-next:hover {
+  background-color: #fff;
+  color: var(--color-black);
+}
