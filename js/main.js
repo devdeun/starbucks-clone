@@ -123,3 +123,6 @@ spyEls.forEach((spyEl) => {
     .setClassToggle(spyEl, "show")
     .addTo(new ScrollMagic.Controller());
 });
+
+const thisYearEl = document.querySelector(".this-year");
+thisYearEl.textContent = new Date().getFullYear();

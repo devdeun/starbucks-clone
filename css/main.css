@@ -826,3 +826,76 @@ header .main-menu-item .contents__texture p {
   background-color: #fff;
   color: var(--color-black);
 }
+
+/* FOOTER */
+footer {
+  background-color: #272727;
+  border-top: 1px solid var(--color-black);
+}
+footer .container {
+  padding: 40px 0 60px 0;
+}
+footer .menu {
+  display: flex;
+  justify-content: center;
+}
+footer .menu li {
+  position: relative;
+}
+footer .menu li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  width: 3px;
+  height: 3px;
+  margin: auto;
+  background-color: #555;
+}
+footer .menu li a {
+  display: block;
+  padding: 15px;
+  color: var(--color-light-gray);
+  font-size: 12px;
+  font-weight: 700;
+}
+footer .menu li:hover a {
+  text-decoration: underline;
+}
+footer .menu li a.green {
+  color: var(--color-green);
+}
+footer .btn-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+footer .btn-group .btn {
+  font-size: 12px;
+  margin-right: 10px;
+}
+footer .btn-group .btn:last-child {
+  margin-right: 0;
+}
+footer .info {
+  margin-top: 30px;
+  text-align: center;
+}
+footer .info span {
+  margin-right: 20px;
+  color: #999;
+  font-size: 12px;
+}
+footer .info span:last-child {
+  margin-right: 0;
+}
+footer .copyright {
+  margin-top: 12px;
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+}
+footer .logo {
+  margin: 30px auto 0;
+}
